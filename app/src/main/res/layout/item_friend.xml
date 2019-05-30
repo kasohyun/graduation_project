@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/frienditem_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_people"/>
+
+        <TextView
+            android:id="@+id/frienditem_textview"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="아이디"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </LinearLayout>
+</LinearLayout>

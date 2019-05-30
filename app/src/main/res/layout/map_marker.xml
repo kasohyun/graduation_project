@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical|center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/box"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location_markerbox">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_address_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_address"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textSize="13dp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/arrow"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/box"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/box"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/eversafe_sos_ic_location"
+        android:visibility="gone" />
+
+</RelativeLayout>

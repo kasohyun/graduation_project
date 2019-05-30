@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.owner.project_final">
+
+    <!--
+         위치 정보 접근 허용
+            https://webnautes.tistory.com/1011 참조
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+     PlacesAPI Exercise
+        https://webnautes.tistory.com/1080
+        android:allowBackup="true" -> android:allowBackup="false"
+    -->
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCy58b-slKn-lA_ynCel2CL_Uv2Wsxovgs" />
+
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Tab1Activity" />
+        <activity android:name=".checkbox_tab1" />
+        <activity android:name=".Tab2Activity" />
+        <activity android:name=".Tab3Activity" />
+
+        <activity android:name=".PurchaseActivity" />
+        <activity android:name=".PurchaseWriteActivity" />
+        <activity android:name=".PurchaseDetailActivity" />
+
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".FoodWriteActivity" />
+        <activity android:name=".FoodDetailActivity" />
+
+        <activity android:name=".RoomActivity" />
+        <activity android:name=".RoomWriteActivity" />
+        <activity android:name=".RoomDetailActivity" />
+
+        <activity android:name=".HobbyActivity" />
+        <activity android:name=".HobbyWriteActivity" />
+        <activity android:name=".HobbyDetailActivity" />
+
+        <activity android:name=".FreeActivity" />
+        <activity android:name=".FreeWriteActivity" />
+        <activity android:name=".FreeDetailActivity" />
+        <activity android:name=".FreeredeActivity" />
+        <activity android:name=".FreereviseActivity" />
+
+        <activity android:name=".BluetoothLED" />
+        <activity android:name=".ChattingActivity" />
+        <activity android:name=".chat.MessageActivity" />
+        <activity
+            android:name=".MypageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".PhotoZoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoticeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".GameActivity" />
+        <activity android:name=".ClearActivity"/>
+
+        <!--
+          <service
+              android:name=".MyFirebaseMessagingService">
+              <intent-filter>
+                  <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+              </intent-filter>
+          </service>
+          <service
+              android:name=".MyFirebaseInstanceIDService">
+              <intent-filter>
+                  <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+              </intent-filter>
+          </service> // FCM메세지 부분
+        -->
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        //배너
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1148515500898185~3187151648"/>
+
+
+    </application>
+
+</manifest>

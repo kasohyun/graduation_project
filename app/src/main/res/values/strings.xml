@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">project_final</string>
+
+    <!-- FirstActivity String Collection -->
+    <string name="welcomeMessage">TextView</string>
+    <string name="idText">아이디</string>
+    <string name="passwordText">TextView</string>
+    <string name="idText2">TextView</string>
+    <string name="textView2">비밀번호</string>
+
+    <!-- LoginActivity String Collection -->
+    <string name="loginIdText">ID</string>
+    <string name="nologin">로그인없이 돌아다녀보기</string>
+    <string name="loginButton">로그인</string>
+    <string name="loginPasswordText">password</string>
+    <string name="loginRegisterButton">회원가입</string>
+    <string name="find_ID_PW">ID/PW 찾기</string>
+
+    <!-- MainActivity String Collection -->
+    <string name="btn_first">오늘 하루</string>
+    <string name="btn_second">위치</string>
+    <string name="btn_third">게시판</string>
+    <string name="btn_fourth">무드등</string>
+    <string name="btn_fifth">미니게임</string>
+    <string name="btn_sixth">자유게시판</string>
+
+    <!-- RegisterActivity String Collection -->
+    <string name="address">address</string>
+    <string name="id">id</string>
+    <string name="name">name</string>
+    <string name="number">number</string>
+    <string name="email">email</string>
+    <string name="auth">auth</string>
+    <string name="birth">birth</string>
+    <string name="password">password</string>
+    <string name="cname">cname</string>
+    <string name="registerButton">회원가입</string>
+    <string name="confirmButton">확인</string>
+    <string name="authButton">인증</string>
+    <string name="authCanButton">취소</string>
+
+    <!-- Tab2Activity String Collection -->
+    <string name="restaurant">식사</string>
+    <string name="atm">ATM</string>
+    <string name="busStation">정류장</string>
+    <string name="cafe">카페</string>
+    <string name="convenienceStore">편의점</string>
+
+    <!-- WriteActivity String Collection -->
+    <string name="activityName">글쓰기</string>
+    <string name="title">제목</string>
+    <string name="subtitle">소제목</string>
+    <string name="content">내용을 입력하세요.</string>
+    <string name="purchaseList">목록 보기</string>
+
+
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="default_notification_channel_name" translatable="true">Test</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8185936107181380/3414409638</string>
+
+    <!-- 게시판 더보기 -->
+    <string name="mainPage">메인화면</string>
+    <string name="chat">채팅</string>
+    <string name="write">글쓰기</string>
+    <string name="erase">글삭제</string>
+    <string name="modify">글수정</string>
+    <string name="mypage">마이페이지</string>
+    <string name="logout">로그아웃</string>
+
+    <!-- 게시판 글쓰기 공통사항 -->
+    <string name="save">저장</string>
+    <string name="cancle">취소</string>
+    <string name="detail">상세내용</string>
+    <string name="password2">비밀번호</string>
+
+    <!-- 공동구매 게시판-->
+    <string name="purchaseBoard">공동구매 게시판 글쓰기</string>
+    <string name="period">대여 기간</string>
+    <string name="period_day">일</string>
+    <string name="roomBoard">단기방대여 게시판</string>
+    <string name="purchaseBoard_detail">공동구매 게시글 상세</string>
+    <string name="tradeLocation">거래장소</string>
+    <string name="search">검색</string>
+    <string name="price">won</string>
+    <string name="tradeDate">거래 날짜</string>
+    <string name="tradeTime">거래 시간</string>
+    <string name="hobby_cost">활동비</string>
+
+
+
+        <string name="clear">Clear!</string>
+        <string name="game_over">Game Over</string>
+        <string name="block_count">남은블록 갯수 :%s</string>
+        <string name="time">플레이 시간 :%1$d.%2$d</string>
+
+
+</resources>

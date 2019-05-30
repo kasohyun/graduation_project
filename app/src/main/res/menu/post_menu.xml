@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/MainButton_post"
+        android:title="@string/mainPage"
+        android:icon="@drawable/baseline_home_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/ChatButton_post"
+        android:title="@string/chat"
+        android:icon="@drawable/baseline_chat_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_write_post"
+        android:title="@string/write"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/MyPageButton_post"
+        android:title="@string/mypage"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/LogOutButton_post"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+
+</menu>
